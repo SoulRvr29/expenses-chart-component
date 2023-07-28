@@ -1,0 +1,57 @@
+@import "settings";
+@import "footer";
+@import "header";
+
+main,
+header,
+footer {
+  margin: 0 1rem;
+}
+
+main {
+  @include brd-padding;
+  background-color: $Very-pale-orange;
+  margin: 1rem;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    @include flex-center(row, space-between);
+    padding: 1.5rem 0;
+    margin-top: 10rem;
+    border-bottom: 2px solid $Cream;
+
+    li {
+      font-size: 0.75rem;
+      color: $Medium-brown;
+      padding: 0 0.5rem;
+    }
+  }
+
+  .summary {
+    @include flex-center(row, space-between);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    p {
+      font-size: 1rem;
+      color: $Medium-brown;
+    }
+    .difference {
+      align-self: flex-end;
+    }
+    .price {
+      font-weight: map-get($font-weight, bold);
+      font-size: 1.9rem;
+      margin-top: 5px;
+    }
+    .percent {
+      font-size: 1rem;
+      font-weight: map-get($font-weight, bold);
+      text-align: right;
+    }
+  }
+}

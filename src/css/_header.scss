@@ -1,0 +1,18 @@
+header {
+  background-color: $Soft-red;
+  color: $Very-pale-orange;
+  @include brd-padding;
+  @include flex-center(row, space-between);
+  h1 {
+    font-size: 1rem;
+    font-weight: map-get($font-weight, normal);
+    margin-bottom: 0.3rem;
+  }
+  p {
+    font-weight: map-get($font-weight, bold);
+    font-size: 1.5rem;
+  }
+  img {
+    width: 4rem;
+  }
+}

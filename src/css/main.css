@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  color: hsl(25, 47%, 15%);
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  max-width: 540px;
+  width: 100%;
+}
+
+footer {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: center;
+  color: hsl(25, 47%, 15%);
+}
+
+footer a {
+  color: hsl(10, 79%, 65%);
+  margin: 0 4px;
+}
+
+footer a:hover {
+  color: hsl(186, 34%, 60%);
+}
+
+header {
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+  border-radius: 0.7rem;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+header h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+header p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+header img {
+  width: 4rem;
+}
+
+main,
+header,
+footer {
+  margin: 0 1rem;
+}
+
+main {
+  border-radius: 0.7rem;
+  padding: 1.2rem;
+  background-color: hsl(33, 100%, 98%);
+  margin: 1rem;
+}
+main h2 {
+  font-size: 1.5rem;
+}
+main ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.5rem 0;
+  margin-top: 10rem;
+  border-bottom: 2px solid hsl(27, 66%, 92%);
+}
+main ul li {
+  font-size: 0.75rem;
+  color: hsl(28, 10%, 53%);
+  padding: 0 0.5rem;
+}
+main .summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+main .summary p {
+  font-size: 1rem;
+  color: hsl(28, 10%, 53%);
+}
+main .summary .difference {
+  align-self: flex-end;
+}
+main .summary .price {
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-top: 5px;
+}
+main .summary .percent {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+}/*# sourceMappingURL=main.css.map */

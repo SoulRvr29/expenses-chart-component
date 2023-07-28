@@ -1,0 +1,13 @@
+footer {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: center;
+  color: $Dark-brown;
+}
+footer a {
+  color: $Soft-red;
+  margin: 0 4px;
+}
+footer a:hover {
+  color: $Cyan;
+}

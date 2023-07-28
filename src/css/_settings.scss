@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+$font-weight: (
+  "normal": 400,
+  "bold": 700,
+);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@mixin flex-center($direction, $justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin brd-padding {
+  border-radius: 0.7rem;
+  padding: 1.2rem;
+}
+// ### Primary
+$Soft-red: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+// ### Neutral
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very-pale-orange: hsl(33, 100%, 98%);
+
+body {
+  font-size: 18px;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  color: $Dark-brown;
+  background-color: $Cream;
+  @include flex-center(column, center);
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  max-width: 540px;
+  width: 100%;
+}
