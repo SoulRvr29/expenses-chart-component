@@ -20,7 +20,7 @@ $font-weight: (
 }
 @mixin brd-padding {
   border-radius: 0.7rem;
-  padding: 1.2rem;
+  padding: 1.3rem;
 }
 // ### Primary
 $Soft-red: hsl(10, 79%, 65%);
@@ -47,6 +47,6 @@ img {
 }
 
 #root {
-  max-width: 540px;
+  max-width: 600px;
   width: 100%;
 }

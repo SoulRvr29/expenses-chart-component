@@ -1,0 +1,75 @@
+@media screen and (min-width: 525px) {
+  main,
+  header,
+  footer {
+    padding: 1.75rem 2rem;
+    border-radius: 1rem;
+    margin: 1.5rem;
+  }
+
+  header {
+    h1 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  main {
+    h2 {
+      font-size: 2.05rem;
+    }
+
+    ul {
+      li {
+        font-size: 0.9rem;
+        .bar {
+          border-radius: 6px;
+        }
+      }
+    }
+    .summary {
+      padding: 1rem;
+      .total {
+        margin-bottom: -0.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+      .price {
+        font-size: 3rem;
+      }
+      .percent {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  footer {
+    margin-top: -2rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  main {
+    h2 {
+      font-size: 1.2rem;
+    }
+    ul {
+      li {
+        padding: 0 0.2rem;
+      }
+    }
+    .summary {
+      p {
+        font-size: 0.9rem;
+      }
+      .price {
+        font-size: 1.5rem;
+      }
+      .percent {
+        font-size: 1rem;
+      }
+    }
+  }
+}

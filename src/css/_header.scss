@@ -4,7 +4,7 @@ header {
   @include brd-padding;
   @include flex-center(row, space-between);
   h1 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: map-get($font-weight, normal);
     margin-bottom: 0.3rem;
   }
