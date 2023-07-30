@@ -1,13 +1,14 @@
+@use "settings" as s;
 footer {
   font-size: 0.9rem;
   line-height: 1.2;
   text-align: center;
-  color: $Dark-brown;
+  color: s.$Dark-brown;
 }
 footer a {
-  color: $Soft-red;
+  color: s.$Soft-red;
   margin: 0 4px;
 }
 footer a:hover {
-  color: $Cyan;
+  color: s.$Cyan;
 }

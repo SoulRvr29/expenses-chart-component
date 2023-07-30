@@ -1,6 +1,6 @@
-@import "settings";
-@import "footer";
-@import "header";
+@use "settings" as s;
+@use "footer";
+@use "header";
 
 main,
 header,
@@ -17,8 +17,8 @@ footer {
   }
 }
 main {
-  @include brd-padding;
-  background-color: $Very-pale-orange;
+  @include s.brd-padding;
+  background-color: s.$Very-pale-orange;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
   h2 {
@@ -27,15 +27,15 @@ main {
 
   ul {
     list-style-type: none;
-    @include flex-center(row, space-between);
+    @include s.flex-center(row, space-between);
     padding: 1.5rem 0;
-    border-bottom: 2px solid $Cream;
+    border-bottom: 2px solid s.$Cream;
     align-items: end;
     margin-top: 2rem;
     min-height: 15rem;
     li {
       font-size: 0.75rem;
-      color: $Medium-brown;
+      color: s.$Medium-brown;
       padding: 0 0.4rem;
       text-align: center;
       max-width: 4rem;
@@ -60,14 +60,14 @@ main {
         align-self: center;
         top: -2.5rem;
         font-size: 1rem;
-        font-weight: map-get($font-weight, "bold");
-        background: $Dark-brown;
-        color: $Very-pale-orange;
+        font-weight: map-get(s.$font-weight, "bold");
+        background: s.$Dark-brown;
+        color: s.$Very-pale-orange;
         padding: 6px;
         border-radius: 5px;
       }
       .bar {
-        background-color: $Soft-red;
+        background-color: s.$Soft-red;
         min-width: 100%;
         border-radius: 3px;
         margin-bottom: 0.75rem;
@@ -75,7 +75,7 @@ main {
       }
 
       .currentDay {
-        background-color: $Cyan;
+        background-color: s.$Cyan;
       }
     }
   }
@@ -89,25 +89,25 @@ main {
   }
 
   .summary {
-    @include flex-center(row, space-between);
+    @include s.flex-center(row, space-between);
     margin-top: 1.2rem;
     margin-bottom: 0.5rem;
 
     p {
       font-size: 1rem;
-      color: $Medium-brown;
+      color: s.$Medium-brown;
     }
     .difference {
       align-self: flex-end;
     }
     .price {
-      font-weight: map-get($font-weight, bold);
+      font-weight: map-get(s.$font-weight, bold);
       font-size: 1.9rem;
       margin-top: 5px;
     }
     .percent {
       font-size: 1rem;
-      font-weight: map-get($font-weight, bold);
+      font-weight: map-get(s.$font-weight, bold);
       text-align: right;
     }
   }

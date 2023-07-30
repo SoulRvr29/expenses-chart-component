@@ -1,15 +1,16 @@
+@use "settings" as s;
 header {
-  background-color: $Soft-red;
-  color: $Very-pale-orange;
-  @include brd-padding;
-  @include flex-center(row, space-between);
+  background-color: s.$Soft-red;
+  color: s.$Very-pale-orange;
+  @include s.brd-padding;
+  @include s.flex-center(row, space-between);
   h1 {
     font-size: 0.95rem;
-    font-weight: map-get($font-weight, normal);
+    font-weight: map-get(s.$font-weight, normal);
     margin-bottom: 0.3rem;
   }
   p {
-    font-weight: map-get($font-weight, bold);
+    font-weight: map-get(s.$font-weight, bold);
     font-size: 1.5rem;
   }
   img {
