@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/expenses-chart-component-ljsi83SqFE](https://www.frontendmentor.io/solutions/expenses-chart-component-ljsi83SqFE)
 - Live Site URL: [https://soulrvr29.github.io/expenses-chart-component/](https://soulrvr29.github.io/expenses-chart-component/)
 
 ## My process
